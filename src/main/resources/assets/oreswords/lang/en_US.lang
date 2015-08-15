@@ -1,0 +1,12 @@
+item.oreswords_coalsword.name=Coal Ore Sword
+item.oreswords_diamondsword.name=Diamond Ore Sword
+item.oreswords_emeraldsword.name=Emerald Ore Sword
+item.oreswords_goldsword.name=Gold Ore Sword
+item.oreswords_ironsword.name=Iron Ore Sword
+item.oreswords_lapissword.name=Lapis Ore Sword
+item.oreswords_quartzsword.name=Quartz Ore Sword
+item.oreswords_redstonesword.name=Redstone Ore Sword
+item.oreswords_hilt.name=Hilt
+tile.oreswords_sharpeningblock_0.name=Sharpening Block
+tile.oreswords_sharpeningblock_10.name=Bladed Sharpening Block
+item.oreswords_sharpeningblade.name=Sharpening Blade

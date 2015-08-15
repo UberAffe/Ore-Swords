@@ -1,0 +1,13 @@
+[
+{
+  "modid": "oreswords",
+  "name": "Ore Swords",
+  "description": "Adds swords made of Ore for special properties and effects.",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "authorList": ["UberAffe"],
+  "parent": "",
+  "screenshots": [],
+  "dependencies": ["mod_Forge"]
+}
+]
