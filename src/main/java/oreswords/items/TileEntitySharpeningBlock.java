@@ -53,7 +53,7 @@ public class TileEntitySharpeningBlock extends TileEntity{
 						worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
 					}
 					System.out.println("Uses left: " + blockMetadata);
-					player.setCurrentItemOrArmor(0, null);
+					heldStack.setItemDamage(1);
 					return true;
 				}
 				return false;
