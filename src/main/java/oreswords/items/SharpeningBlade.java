@@ -5,14 +5,14 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import oreswords.lib.RefStrings;
+import oreswords.lib.References;
 
 public class SharpeningBlade extends Item{
 
 	public SharpeningBlade()
 	{
-		setUnlocalizedName(RefStrings.MODID + "_" + "sharpeningblade");
-		setTextureName(RefStrings.MODID + ":" + "sharpeningblade");
+		setUnlocalizedName(References.MODID + "_" + "sharpeningblade");
+		setTextureName(References.MODID + ":" + "sharpeningblade");
 		setCreativeTab(CreativeTabs.tabTools);
 	}
 	

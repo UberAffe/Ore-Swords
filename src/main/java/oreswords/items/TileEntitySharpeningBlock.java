@@ -5,7 +5,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
-import oreswords.lib.RefStrings;
+import oreswords.lib.References;
 
 public class TileEntitySharpeningBlock extends TileEntity{
 	
@@ -28,12 +28,12 @@ public class TileEntitySharpeningBlock extends TileEntity{
 					NBTTagCompound setNBT = new NBTTagCompound();
 					if(heldStack.hasTagCompound())
 						setNBT = heldStack.getTagCompound();
-					if(setNBT.hasKey(RefStrings.ENHANCEMENT))
-						setNBT.setInteger(RefStrings.ENHANCEMENT, setNBT.getInteger(RefStrings.ENHANCEMENT) + 1);
+					if(setNBT.hasKey(References.ENHANCEMENT))
+						setNBT.setInteger(References.ENHANCEMENT, setNBT.getInteger(References.ENHANCEMENT) + 1);
 					else
-						setNBT.setInteger(RefStrings.ENHANCEMENT, 1);
-					setNBT.setBoolean(RefStrings.ENHANCEMENT_ACTIVE, true);
-					System.out.println("points = " + setNBT.getDouble(RefStrings.ENHANCEMENT));
+						setNBT.setInteger(References.ENHANCEMENT, 1);
+					setNBT.setBoolean(References.ENHANCEMENT_ACTIVE, true);
+					System.out.println("points = " + setNBT.getDouble(References.ENHANCEMENT));
 					heldStack.setTagCompound(setNBT);
 					blockMetadata--;
 					System.out.println("Uses left: " + blockMetadata);

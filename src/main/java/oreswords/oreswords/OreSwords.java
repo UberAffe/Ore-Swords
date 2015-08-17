@@ -20,12 +20,12 @@ import oreswords.items.OreSword;
 import oreswords.items.OreSword.SWORDTYPES;
 import oreswords.items.SharpeningBlade;
 import oreswords.items.SharpeningBlock;
-import oreswords.lib.RefStrings;
+import oreswords.lib.References;
 
-@Mod(modid = RefStrings.MODID, name = RefStrings.NAME, version = RefStrings.VERSION, useMetadata = true)
+@Mod(modid = References.MODID, name = References.NAME, version = References.VERSION, useMetadata = true)
 public class OreSwords {
 	
-	@Instance(RefStrings.MODID)
+	@Instance(References.MODID)
     public static OreSwords instance;
 
 	//@SidedProxy(clientSide = RefStrings.CLIENTPROXY, serverSide = RefStrings.SERVERPROXY)
@@ -39,12 +39,12 @@ public class OreSwords {
 	
 	@EventHandler
     public void preInit (FMLPreInitializationEvent event){
-        // preinit
+        // preinit 
 		for(SWORDTYPES sword : SWORDTYPES.values())
-			GameRegistry.registerItem(new OreSword(sword), RefStrings.MODID + "_" + sword.getName());
-		GameRegistry.registerItem(hilt, RefStrings.MODID + "_" + "hilt");
-		GameRegistry.registerItem(sharpeningblade, RefStrings.MODID + "_" + "sharpeningblade");
-		GameRegistry.registerBlock(sharpeningblock, RefStrings.MODID + "_" + "sharpeningblock");
+			GameRegistry.registerItem(new OreSword(sword), References.MODID + "_" + sword.getName());
+		GameRegistry.registerItem(hilt, References.MODID + "_" + "hilt");
+		GameRegistry.registerItem(sharpeningblade, References.MODID + "_" + "sharpeningblade");
+		GameRegistry.registerBlock(sharpeningblock, References.MODID + "_" + "sharpeningblock");
     }
 	
 	@EventHandler

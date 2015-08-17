@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
-import oreswords.lib.RefStrings;
+import oreswords.lib.References;
 
 public class DamageEnhancement{
 
@@ -25,12 +25,12 @@ public class DamageEnhancement{
 			if( itemstack != null && ItemSword.class.isAssignableFrom(itemstack.getItem().getClass()) && itemstack.hasTagCompound())
 			{
 				NBTTagCompound nbtTags = itemstack.getTagCompound();
-				if(nbtTags != null && nbtTags.hasKey(RefStrings.ENHANCEMENT))
+				if(nbtTags != null && nbtTags.hasKey(References.ENHANCEMENT))
 				{
 					System.out.println("using enhanced sword");
-					if(nbtTags.getBoolean(RefStrings.ENHANCEMENT_ACTIVE))
+					if(nbtTags.getBoolean(References.ENHANCEMENT_ACTIVE))
 					{
-						double val = nbtTags.getDouble(RefStrings.ENHANCEMENT);
+						double val = nbtTags.getDouble(References.ENHANCEMENT);
 						double damage = 0;
 						for(int i = 1; i < val;)
 						{

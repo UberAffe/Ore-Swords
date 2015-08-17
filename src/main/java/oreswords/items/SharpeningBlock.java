@@ -14,7 +14,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
-import oreswords.lib.RefStrings;
+import oreswords.lib.References;
 
 public class SharpeningBlock extends BlockContainer{
 
@@ -25,8 +25,8 @@ public class SharpeningBlock extends BlockContainer{
 	
 	public SharpeningBlock() {
 		super(mat);
-		setBlockName(RefStrings.MODID + "_" + name);
-		setBlockTextureName(RefStrings.MODID + ":" + name);
+		setBlockName(References.MODID + "_" + name);
+		setBlockTextureName(References.MODID + ":" + name);
 		setCreativeTab(CreativeTabs.tabBlock);
 		setHardness(2F);
 		setResistance(5F);

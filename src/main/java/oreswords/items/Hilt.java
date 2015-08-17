@@ -2,14 +2,14 @@ package oreswords.items;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import oreswords.lib.RefStrings;
+import oreswords.lib.References;
 
 public class Hilt extends Item{
 	
 	public Hilt()
 	{
-		setUnlocalizedName(RefStrings.MODID + "_" + "hilt");
-		setTextureName(RefStrings.MODID + ":" + "hilt");
+		setUnlocalizedName(References.MODID + "_" + "hilt");
+		setTextureName(References.MODID + ":" + "hilt");
 		setCreativeTab(CreativeTabs.tabTools);
 	}
 
