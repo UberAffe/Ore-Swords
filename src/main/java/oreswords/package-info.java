@@ -5,4 +5,4 @@
  * @author Matt
  *
  */
-package oreswords.oreswords;
+package oreswords;
